@@ -1,0 +1,16 @@
+
+name: 🔁 Hourly Fetch Google Sheets
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour (UTC)
+  workflow_dispatch:      # Also allows manual trigger
+
+jobs:
+  call-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔐 Trigger ApplyWizz Google Sheet Fetch API
+        run: |
+          curl -X POST https://applywizz-crm-tool.vercel.app/api/fetch-google-sheet \
+          -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"

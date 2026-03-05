@@ -1,0 +1,9 @@
+2026-03-05 18:33:10,708 [INFO] Fetching domains + roles from API...
+2026-03-05 18:33:13,032 [INFO] ✅ 124 domains, 789 search keywords loaded
+2026-03-05 18:33:13,033 [INFO] 📄 No DB credentials → CSV-only mode
+2026-03-05 18:33:13,033 [INFO] 🔍 124 domains → 124 keyword combos
+2026-03-05 18:33:13,035 [INFO] 📋 Portals: 65 Workday + 29 iCIMS
+2026-03-05 18:33:13,190 [INFO] 📄 CSV: 03-05-2026.csv
+2026-03-05 18:33:13,191 [INFO] ⚡ Phase 1: Discovering portals...
+2026-03-05 18:33:25,628 [INFO] ✅ Active: 12 Workday + 4 iCIMS
+2026-03-05 18:33:25,629 [INFO] ⚡ Phase 2: Searching 124 keywords across 16 portals...

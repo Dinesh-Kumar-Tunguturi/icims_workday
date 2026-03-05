@@ -1,0 +1,28 @@
+-- Only table needed
+create table public.workday_icims (
+  id bigint generated always as identity not null,
+  domain text null,
+  role_searched text null,
+  source_ats text null,
+  company text null,
+  job_id text null,
+  title text null,
+  job_url text null,
+  description text null,
+  location text null,
+  city text null,
+  state text null,
+  country text null,
+  department text null,
+  job_category text null,
+  employment_type text null,
+  time_type text null,
+  posted_date text null,
+  salary text null,
+  experience_level text null,
+  company_logo text null,
+  remote_eligible text null,
+  scraped_at timestamp with time zone null default now(),
+  constraint workday_icims_pkey primary key (id),
+  constraint workday_icims_job_url_key unique (job_url)
+) TABLESPACE pg_default;
